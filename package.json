@@ -9,8 +9,19 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-sass": "^4.0.2",
+    "rollup": "^1.26.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-sass": "^1.2.2"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.6.3",
+    "swiper": "^5.2.0"
   }
 }
