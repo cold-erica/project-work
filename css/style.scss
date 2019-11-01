@@ -421,33 +421,33 @@ h1 {
 }
 
 .news-content-1 {
-    background-image: url(..//img/news1.png);
+    background-image: url(../img/news1.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .news-content-2{
-    background-image: url(..//img/news2.png);
+    background-image: url(../img/news2.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .news-content-3 {
-    background-image: url(..//img/news3.png);
+    background-image: url(../img/news3.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .news-content-4 {
-    background-image: url(..//img/news4.png);
+    background-image: url(../img/news4.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .news-content-5 {
-    background-image: url(..//img/news5.png);
+    background-image: url(../img/news5.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
 .news-content-6 {
-    background-image: url(..//img/news6.png);
+    background-image: url(../img/news6.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -583,4 +583,60 @@ h1 {
     }
 }
 
+//history
 
+.history {
+    display: flex;
+    flex-direction: column;
+    height: 1250px;
+    background: {
+        image: url(../img/history-bg.png);
+        position: bottom;
+        size: contain;
+        repeat: no-repeat;
+    }
+}
+
+.history-heading {
+    font-size: 50.49px;
+    font-family: "dosis-light";
+    color: rgb(91, 92, 90);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 160px auto 56px auto;
+}
+
+.history-event {
+    font-size: 14px;
+    color: rgb(121, 130, 133);
+    line-height: 1.734;
+    text-align: center;
+    max-width: 50%;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+    padding-bottom: 200px;
+}
+
+.history-container {
+    display: flex;
+
+    p {
+        font-size: 35.49px;
+        font-family: "Dosis";
+        color: rgba(0, 0, 0, 0.278);
+        text-transform: uppercase;
+        line-height: 1.67;
+    }
+
+    div {
+        width: 147px;
+        border-bottom: 1px solid  rgb(0, 0, 0);
+        margin: {
+            bottom: 7px;
+            left: auto;
+            right: auto;
+        }
+    }
+}
