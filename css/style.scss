@@ -1,4 +1,5 @@
 @import "./reset.css";
+@import "./slider.scss";
 
 @font-face {
     font-family: "dosis-light";
@@ -420,37 +421,14 @@ h1 {
     }
 }
 
-.news-content-1 {
-    background-image: url(..//img/news1.png);
-    background-repeat: no-repeat;
-    background-size: contain;
+@for $i from 1 through 6 {
+    .news-content-#{$i} {
+        background-image: url(../img/news#{$i}.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
 }
 
-.news-content-2{
-    background-image: url(..//img/news2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.news-content-3 {
-    background-image: url(..//img/news3.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.news-content-4 {
-    background-image: url(..//img/news4.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.news-content-5 {
-    background-image: url(..//img/news5.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-.news-content-6 {
-    background-image: url(..//img/news6.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-}
 
 .news-date {
     font-size: 14px;
