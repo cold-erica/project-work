@@ -83,7 +83,6 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    height: 1850px;
     width: 100%;
 }
 
@@ -188,6 +187,7 @@ h1 {
 .btn-3 {
     background-image: url(../img/btn-disco3.png);
     margin-top: 95px;
+    margin-bottom: 160px
 }
 
 //section concert
@@ -200,7 +200,6 @@ h1 {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-    height: 1420px;
     width: 100%;
 }
 
@@ -224,7 +223,7 @@ h1 {
     line-height: 1.734;
     text-align: center;
     max-width: 855px;
-    padding-bottom: 470px;
+    padding-bottom: 350px;
     margin: {
         left: auto;
         right: auto ;
@@ -274,7 +273,10 @@ h1 {
     width: 196px;
     height: 56px;
     border: 1px solid rgb(192, 206, 211);
-    margin-top: 40px;
+    margin: {
+        top: 40px;
+        bottom: 50px;
+    }
     a {
         color: #000;
         text-decoration: none;
@@ -288,7 +290,6 @@ h1 {
 .compositions {
     display: flex;
     flex-direction: column;
-    height: 1990px;
 }
 
 .compositions-content {
@@ -330,10 +331,10 @@ h1 {
 .song-description {
     border: 1px solid;
     border-style: none;
-    width: 600px;
-    height: 422px;
+    width: 543px;
     background-color: rgb(245, 246, 246);
-    padding-left: 37px;
+    background-size: cover;
+    padding: 0 20px 0 37px;
 }
 
 .compositions-content-container {
@@ -391,6 +392,7 @@ h1 {
     width: 196px;
     height: 56px;
     border: 1px solid rgb(192, 206, 211);
+    margin-bottom: 10px;
     a {
         color: #000;
         text-decoration: none;
@@ -480,7 +482,7 @@ h1 {
 .event {
     display: flex;
     flex-direction: column;
-    height: 1280px;
+    align-items: flex-end;
     background: {
         image: url(../img/event-bg.png);
         position: bottom;
@@ -489,14 +491,17 @@ h1 {
     }
 }
 
+.event-content {
+    max-width: 50%;
+}
+
 .event-heading {
     font-size: 50.49px;
     font-family: "dosis-light";
     color: rgb(66, 113, 126);
     text-transform: uppercase;
-    margin-left: 55%;
     padding: {
-        top: 360px;
+        top: 180px;
         bottom: 120px;
     }   
 }
@@ -507,7 +512,6 @@ h1 {
     color: rgb(0, 0, 0);
     line-height: 1.055;
     font-weight: bold;
-    margin-left: 55%;
     padding-bottom: 16px;
 }
 
@@ -515,14 +519,13 @@ h1 {
     font-size: 14px;
     font-family: "Open Sans";
     color: rgb(121, 130, 133);
-    margin-left: 55%;
     padding-bottom: 20px;
+    margin-right: 20px;
 }
 
 .event-description-underline {
     border-top: 1px solid rgb(0, 0, 0);
-    width: 7.5%;
-    margin-left: 55%;
+    width: 15%;
     padding-bottom: 20px;
 }
 
@@ -531,7 +534,6 @@ h1 {
     color: rgba(0, 0, 0, 0.651);
     font-weight: bold;
     text-transform: uppercase;
-    margin-left: 55%;
     padding-bottom: 25px;
 }
 
@@ -539,7 +541,7 @@ h1 {
     border-left: 1px solid rgb(0, 0, 0);
     height: 51px;
     margin: {
-        left: 57%;
+        left: 4%;
         bottom: 12px;
     }
 }
@@ -548,7 +550,7 @@ h1 {
     border-left: 1px solid rgb(0, 0, 0);
     height: 166px;
     margin: {
-        left: 57%;
+        left: 4%;
         bottom: 25px;
     }
 }
@@ -557,7 +559,7 @@ h1 {
     border-left: 1px solid rgb(0, 0, 0);
     height: 51px;
     margin: {
-        left: 57%;
+        left: 4%;
         bottom: 12px;
         top:12px;
     }
@@ -629,4 +631,18 @@ h1 {
         left: auto;
         right: auto;
     }
+}
+
+//footer
+
+.contact {
+  display: flex;
+  height: 985px;
+  background-image: url(../img/footer-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.form {
+
 }
