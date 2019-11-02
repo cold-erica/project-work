@@ -309,6 +309,10 @@ h1 {
     padding-bottom: 55px;
 }
 
+.video {
+    object-fit: cover;
+}
+
 .compositions-preview {
     max-width: 692px;
     font-size: 14px;
@@ -410,22 +414,20 @@ h1 {
 .news-content {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .news-content-event {
-    max-width: 30%;
-    height: 422px;
-    margin: {
-        right: 25px;
-        bottom: 32px;
-    }
+    width: 30%;
 }
 
 @for $i from 1 through 6 {
     .news-content-#{$i} {
         background-image: url(../img/news#{$i}.png);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size:cover;
+        padding: 32px 32px 10px 32px;
+        margin: 20px;
     }
 }
 
@@ -452,7 +454,7 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.734;
-    margin-left: 36px;
+    
 }
 
 .news-description {
@@ -462,7 +464,7 @@ h1 {
     line-height: 1.055;
     font-weight: bold;
     padding-bottom: 63px;
-    margin-left: 36px;
+    
 }
 
 .news-song-description {
@@ -470,7 +472,7 @@ h1 {
     font-family: "Open Sans";
     color: rgb(121, 130, 133);
     line-height: 1.734;
-    margin-left: 36px; 
+    
 }
 
 //Upcoming Events
@@ -612,9 +614,19 @@ h1 {
         width: 147px;
         border-bottom: 1px solid  rgb(0, 0, 0);
         margin: {
-            bottom: 7px;
+            bottom: 30px;
             left: auto;
             right: auto;
         }
+    }
+}
+
+.hisrtory-song-description {
+    max-width: 10%;
+    text-align: center;
+    padding-top: 45px;
+    margin: {
+        left: auto;
+        right: auto;
     }
 }

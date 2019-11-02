@@ -41,4 +41,4 @@ gulp.task('watch', () => {
     });
 });
 
-gulp.task('default', gulp.series(['clean', 'styles']));
+gulp.task('default', gulp.series(['clean', 'styles', 'scripts', 'watch']));
