@@ -516,6 +516,7 @@ h1 {
 }
 
 .event-song-description {
+    max-width: 70%;
     font-size: 14px;
     font-family: "Open Sans";
     color: rgb(121, 130, 133);
@@ -633,7 +634,7 @@ h1 {
     }
 }
 
-//footer
+//contact
 
 .contact {
   display: flex;
@@ -641,8 +642,17 @@ h1 {
   background-image: url(../img/footer-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
+  justify-content: flex-end;
 }
 
 .form {
+    width: 50%;
+}
 
+.contact-heading {
+    margin-top: 250px;
+        font-size: 50.49px;
+        font-family: "dosis-light";
+        color: rgb(69, 69, 69);
+        text-transform: uppercase;
 }
