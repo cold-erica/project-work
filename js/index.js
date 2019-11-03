@@ -15,6 +15,14 @@ class Application {
                 nextEl: `${this.sliderButtonSelectorTemplate}next`,
                 prevEl: `${this.sliderButtonSelectorTemplate}prev`,
             },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 250000,
+                disableOnInteraction: false,
+            },
         });
     }
 }
