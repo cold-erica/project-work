@@ -1,13 +1,6 @@
 @import "./reset.css";
 @import "./slider.scss";
 
-// $font-family-base: 'Raleway', sans-serif;
-// @import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
-// @import "../node_modules/@fortawesome/fontawesome-free/scss/brands";
-// @import "../node_modules/@fortawesome/fontawesome-free/scss/regular";
-// @import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
-// @import "../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
-
 @font-face {
     font-family: "dosis-light";
     src: url(../font/Dosis-Light.ttf);
@@ -729,8 +722,14 @@ textarea {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 150px;
     border-left: 2px solid #000;
+}
+
+
+.social-container-outer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
     padding-top: 90px;
 }
 
