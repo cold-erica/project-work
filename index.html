@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="dist/style.css">
+    <link href="dist/all.css" rel="stylesheet" type="text/css">
+    <link href="dist/style.css" rel="stylesheet">
     <script src="dist/index.js"></script>
 </head>
 <body>
@@ -294,23 +295,38 @@
                 </div>
             </section>
             <section class="contact">
-                <div class="form">
+                <div class="contact-container">
                     <h2 class="contact-heading">contact</h2>
                     <p class="contact-song">Canada Island, Division No. 23, Unorganized, MB, Canada <br/>
-                                Tel. +1(778) 288 5180</p>
-                    <div>
-                        <form>
-                            <p><input class="form-contact" type="text" name="name" id="name"/>
-                            </p>
-                            <p><input class="form-contact" type="text" name="E mail" id="email"/>
-                            </p>
-                            <p><textarea name="message" id="message" value="message"></textarea>
-                            </p>
-                            <p><input class="form-btn" name="submit" type="submit" id="submit" value="send" />
-                            </p>
+                        Tel. +1(778) 288 5180</p>
+                    <!-- <div class="contact-form-container">
+                        <form class="form-container">
+                            <input class="form-contact" type="text" name="name" id="name"/>
+                            <input class="form-contact" type="text" name="E mail" id="email"/>
+                            <input class="form-contact" type="text" name="Message" id="message"/>
                         </form>
-                        <div></div>
-                    </div>
+                        <div class="social-container">
+                            <div>1</div>
+                            <div>2</div>
+                            <div>3</div>
+                        </div>
+                        <input class="form-btn" name="submit" type="submit" id="submit" value="send" />
+                    </div> -->
+                    <form class="form-container">
+                        <div class="contact-form-container">
+                            <div class="form-container">
+                                <input class="form-contact" type="text" name="name" id="name" placeholder="Name"/>
+                                <input class="form-contact" type="text" name="E mail" id="email" placeholder="E mail"/>
+                                <input class="form-contact" type="text" name="Message" id="message" placeholder="Message" />
+                            </div>
+                            <div class="social-container">
+                                <div class="social-el"><i class="fab fa-facebook-f"></i></div>
+                                <div class="social-el"><i class="fab fa-instagram"></i></div>
+                                <div class="social-el"><i class="fab fa-twitter"></i></div>
+                            </div>
+                        </div>
+                        <input class="form-btn" name="submit" type="submit" id="submit" value="send" />
+                    </form>
                 </div>
             </section>
         </main>

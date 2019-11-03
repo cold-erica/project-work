@@ -13,6 +13,22 @@ gulp.task('styles', () => {
         .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('copy-fonts', () => {
+    return gulp.src(
+        'node_modules/@fortawesome/fontawesome-free/webfonts/*'
+    ).pipe(
+        gulp.dest('./webfonts/')
+    );
+});
+
+gulp.task('copy-css', () => {
+    return gulp.src(
+        'node_modules/@fortawesome/fontawesome-free/css/all.css'
+    ).pipe(
+        gulp.dest('./dist/')
+    );
+});
+
 gulp.task('clean', () => {
     return del([
         'dist/style.css',
@@ -41,4 +57,4 @@ gulp.task('watch', () => {
     });
 });
 
-gulp.task('default', gulp.series(['clean', 'styles', 'scripts', 'watch']));
+gulp.task('default', gulp.series(['clean', 'styles', 'scripts', 'copy-fonts', 'copy-css', 'watch']));
