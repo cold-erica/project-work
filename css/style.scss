@@ -43,6 +43,8 @@ main {
     background-color: #e5e6e6;
     opacity: 0.5;
     height: 63px;
+    position: fixed;
+    width: 100%;
 }
 
 .menu {
@@ -421,6 +423,7 @@ h1 {
 
 .news-content-event {
     width: 30%;
+
 }
 
 @for $i from 1 through 6 {
@@ -650,9 +653,56 @@ h1 {
 }
 
 .contact-heading {
-    margin-top: 250px;
-        font-size: 50.49px;
-        font-family: "dosis-light";
-        color: rgb(69, 69, 69);
-        text-transform: uppercase;
+    margin-top: 200px;
+    font-size: 50.49px;
+    font-family: "dosis-light";
+    color: rgb(69, 69, 69);
+    text-transform: uppercase;
+}
+
+.contact-song {
+    font-size: 14px;
+    color: rgb(121, 130, 133); 
+    margin-top: 37px;
+    line-height: 2.0;
+}
+
+.form-contact {
+    width: 385px;
+    height: 75px;
+    font-size: 14px;
+    color: rgb(121, 130, 133);
+    border: none;
+    border-bottom: 1px solid  rgb(69, 69, 69);;
+    background: transparent;
+    :focus {
+        background: rgb(228, 234, 236);
+    }
+}
+
+textarea {
+    width: 385px;
+    height: 75px;
+    font-size: 14px;
+    color: rgb(121, 130, 133);
+    border: none;
+    border-bottom: 1px solid  rgb(69, 69, 69);;
+    resize: none;
+    overflow: auto;
+    background: transparent;
+    :focus {
+        background:rgb(228, 234, 236);
+    }
+}
+
+.form-btn {
+    margin-top: 28px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 70px;
+    height: 25px;
 }
