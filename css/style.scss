@@ -45,6 +45,7 @@ main {
     height: 63px;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 
 .menu {
@@ -99,12 +100,24 @@ main {
 }
 
 h1 {
+    position: relative;
     font-size: 50.49px;
     font-family: "dosis-light";
     color: rgb(92, 13, 13);
     text-transform: uppercase;
     line-height: 1.1;
     text-align: center;
+}
+
+h1::before {
+    content: " ";
+    border-bottom: 2px solid #000;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    width: 120%;
+    height: 50%;
+    z-index: -1;
 }
 
 .discography-song-description {
@@ -210,6 +223,7 @@ h1 {
 }
 
 .concert-heading {
+    position: relative;
     font-size: 50.49px;
     font-family: "dosis-light";
     color: rgb(144, 210, 248);
@@ -217,6 +231,16 @@ h1 {
     line-height: 1.174;
     text-align: center;
     margin: 160px 0 55px;
+}
+
+.concert-heading::before {
+    content: " ";
+    border-bottom: 2px solid #000;
+    position: absolute;
+    width: 30%;
+    height: 50%;
+    z-index: -1;
+    left: 35%;
 }
 
 .concert-preview {
@@ -303,13 +327,24 @@ h1 {
 }
 
 .compositions-heading {
+    position: relative;
     font-size: 50.49px;
     font-family: "dosis-light";
     color: rgb(0, 0, 0);
     text-transform: uppercase;
     text-align: center;
-    padding-top: 162px;
-    padding-bottom: 55px;
+    margin-top: 162px;
+    margin-bottom: 55px;
+}
+
+.compositions-heading::before {
+    content: " ";
+    border-bottom: 2px solid #000;
+    position: absolute;
+    width: 44%;
+    height: 50%;
+    z-index: -1;
+    left: 28%;
 }
 
 .video {
@@ -394,12 +429,26 @@ h1 {
     width: 196px;
     height: 56px;
     border: 1px solid rgb(192, 206, 211);
-    margin-bottom: 10px;
     a {
         color: #000;
         text-decoration: none;
         font-size: 14px;
         font-weight: bold;
+    }
+}
+
+.compositions-wrapper-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    i {
+        color: rgba(153, 153, 153, 0.8);
+        margin: {
+            top: 35px;
+            right: 20px;
+            left: 5px;
+        }
     }
 }
 
@@ -423,7 +472,40 @@ h1 {
 
 .news-content-event {
     width: 30%;
+}
 
+.card-padding {
+    padding: 32px 32px 10px 32px;
+}
+.card-margin {
+    margin: 20px;
+}
+
+.card {
+    transition-duration: .5s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    transition-duration: .5s;
+}
+
+.front .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.front {
+    position: absolute;
+    width: 100%;
 }
 
 @for $i from 1 through 6 {
@@ -431,11 +513,19 @@ h1 {
         background-image: url(../img/news#{$i}.png);
         background-repeat: no-repeat;
         background-size:cover;
-        padding: 32px 32px 10px 32px;
-        margin: 20px;
+        height: 100%;
     }
 }
-
+ 
+@for $i from 1 through 6 {
+    .card-front-#{$i} {
+        background-image: url(../img/front-card#{$i}.png);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position: right;
+        height: 100%;
+    }
+} 
 
 .news-date {
     font-size: 14px;
@@ -499,14 +589,23 @@ h1 {
 }
 
 .event-heading {
+    position: relative;
     font-size: 50.49px;
     font-family: "dosis-light";
     color: rgb(66, 113, 126);
     text-transform: uppercase;
-    padding: {
+    margin: {
         top: 180px;
         bottom: 120px;
     }   
+}
+
+.event-heading::before {
+    content: " ";
+    border-bottom: 2px solid #000;
+    position: absolute;
+    width: 50%;
+    height: 50%;
 }
 
 .event-description {
@@ -584,12 +683,23 @@ h1 {
 }
 
 .history-heading {
+    position: relative;
     font-size: 50.49px;
     font-family: "dosis-light";
     color: rgb(91, 92, 90);
     text-transform: uppercase;
     text-align: center;
     margin: 160px auto 56px auto;
+}
+
+.history-heading::before {
+    content: " ";
+    border-bottom: 2px solid #000;
+    position: absolute;
+    width: 110%;
+    height: 50%;
+    z-index: -1;
+    left: -6%;
 }
 
 .history-event {
@@ -641,23 +751,31 @@ h1 {
 
 .contact {
   display: flex;
-  height: 985px;
   background-image: url(../img/footer-bg.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .contact-container {
-    width: 50%;
+    margin-left: 25%;
 }
 
 .contact-heading {
+    position: relative;
     margin-top: 200px;
     font-size: 50.49px;
     font-family: "dosis-light";
     color: rgb(69, 69, 69);
     text-transform: uppercase;
+}
+
+.contact-heading::before {
+    content: " ";
+    border-bottom: 2px solid #000;
+    position: absolute;
+    width: 94%;
+    height: 50%;
 }
 
 .contact-song {
@@ -669,7 +787,6 @@ h1 {
 
 .form-contact {
     width: 385px;
-    // height: 75px;
     padding-top: 64px;
     font-size: 14px;
     color: rgb(121, 130, 133);
@@ -679,21 +796,6 @@ h1 {
     padding-bottom: 10px;
     :focus {
         background: rgb(228, 234, 236);
-    }
-}
-
-textarea {
-    width: 385px;
-    height: 75px;
-    font-size: 14px;
-    color: rgb(121, 130, 133);
-    border: none;
-    border-bottom: 2px solid  rgb(69, 69, 69);;
-    resize: none;
-    overflow: auto;
-    background: transparent;
-    :focus {
-        background:rgb(228, 234, 236);
     }
 }
 
@@ -707,6 +809,7 @@ textarea {
     text-transform: uppercase;
     width: 70px;
     height: 25px;
+    margin-bottom: 50px;
 }
 
 .form-container {
@@ -736,3 +839,9 @@ textarea {
 .social-el {
     padding-left: 15px;
 }
+
+//slider
+
+
+
+
