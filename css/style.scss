@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./slider.scss";
+@import "./swiper.min.css";
 
 @font-face {
     font-family: "dosis-light";
@@ -37,6 +38,16 @@ main {
     width: 100%;
 }
 
+@keyframes blink-header {
+    0% {
+        transform: translateX(-60px) skew(35deg)
+    }
+
+    50%,to {
+        transform: translateX(100%) skew(35deg)
+    }
+}
+
 .header-content {
     display: flex;
     justify-content: center;
@@ -46,6 +57,19 @@ main {
     position: fixed;
     width: 100%;
     z-index: 5;
+
+    ::before {
+        width: 100%;
+        height: 100%;
+        content: "";
+        border-left: 58px solid rgba(255,251,237,.16);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.4;
+        will-change: transform;
+        animation: blink-header 5s infinite ease;
+    }
 }
 
 .menu {
@@ -421,6 +445,24 @@ h1::before {
     padding-bottom: 15px;
 }
 
+
+@keyframes button-shaking {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg)
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg)
+    }
+}
   
 .compositions-btn {
     display: flex;
@@ -435,6 +477,10 @@ h1::before {
         font-size: 14px;
         font-weight: bold;
     }
+}
+
+.compositions-btn:hover {
+    animation: button-shaking 2s infinite ease;
 }
 
 .compositions-wrapper-btn {
@@ -839,9 +885,3 @@ h1::before {
 .social-el {
     padding-left: 15px;
 }
-
-//slider
-
-
-
-
