@@ -1,5 +1,3 @@
-// import { partial } from 'lodash';
-// import { partial } from 'lodash';
 import {set as setCookie, get as getCookie} from 'es-cookie';
 
 export class LikeHandler {
