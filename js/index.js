@@ -1,5 +1,3 @@
-import '../css/style.scss';
-
 import { LikeHandler } from './like';
 import { Slider } from './slider';
 

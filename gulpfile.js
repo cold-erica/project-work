@@ -42,7 +42,13 @@ gulp.task('scripts', () => {
                 sassRollup(),
                 babel({presets: ['@babel/env']}),
                 resolve(),
-                commonjs()
+                commonjs({
+                    namedExports: {
+                        'node_modules/lodash/lodash.js': [
+                            'partial',
+                        ]
+                    }
+                })
             ]
         }, 'umd'))
       .pipe(gulp.dest('dist/'));

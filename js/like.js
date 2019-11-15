@@ -1,4 +1,5 @@
-import { partial } from 'lodash';
+// import { partial } from 'lodash';
+// import { partial } from 'lodash';
 import {set as setCookie, get as getCookie} from 'es-cookie';
 
 export class LikeHandler {
@@ -20,7 +21,9 @@ export class LikeHandler {
             const cookieIsSet = cookie === '1'
     
             this.setLikeState(element, cookieIsSet, this.values[index]);
-            const handler = partial(this.likeClick, index).bind(this);
+            const handler = (e) => {
+                this.likeClick(index, e);
+            };
             element.addEventListener('click',  handler);
         })
     }
