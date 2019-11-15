@@ -29,6 +29,14 @@ gulp.task('copy-css', () => {
     );
 });
 
+gulp.task('copy-css-swal', () => {
+    return gulp.src(
+        'node_modules/sweetalert2/dist/sweetalert2.min.css'
+    ).pipe(
+        gulp.dest('./dist/')
+    );
+});
+
 gulp.task('clean', () => {
     return del([
         'dist/style.css',
@@ -63,4 +71,4 @@ gulp.task('watch', () => {
     });
 });
 
-gulp.task('default', gulp.series(['clean', 'styles', 'scripts', 'copy-fonts', 'copy-css', 'watch']));
+gulp.task('default', gulp.series(['clean', 'styles', 'scripts', 'copy-fonts', 'copy-css-swal', 'copy-css', 'watch']));

@@ -1,5 +1,5 @@
 ## Requirements
-NodeJs > 10
+NodeJs >= 10
 
 ## How to run
 
@@ -7,3 +7,5 @@ NodeJs > 10
 npm i
 npm run start
 ```
+
+then just open index.html file
