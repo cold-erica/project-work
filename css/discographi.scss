@@ -1,0 +1,123 @@
+.discography {
+    background-image: url(../img/bg-disco.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    width: 100%;
+}
+
+.discography-content {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    position: relative;
+    font-size: 50.49px;
+    font-family: "dosis-light";
+    color: rgb(92, 13, 13);
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h1::before {
+    content: " ";
+    border-bottom: 2px solid #000;
+    position: absolute;
+    top: 0px;
+    left: -30px;
+    width: 120%;
+    height: 50%;
+    z-index: -1;
+}
+
+.discography-song-description {
+    font-size: 23px;
+    color: #000;
+    text-align: center;
+}
+
+.preview {
+    padding-top: 50px;
+    padding-bottom: 160px;
+    max-width: 716px;
+    font-size: 14px;
+    color: rgb(121, 130, 133);
+    line-height: 1.734;
+    text-align: center;
+}
+
+.container-disco {
+    display: flex;
+}
+
+.chronology {
+    width: 40%;
+    padding-right: 20px;
+}
+
+.chronology-content {
+    font-size: 14px;
+    color: rgb(172, 172, 172);
+    line-height: 1.734;
+    margin-top: 20px;
+}
+
+.chronology-date {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.651);
+    font-weight: bold;
+    line-height: 1.734;
+    margin-top: 15px;
+}
+
+.chronology-event {
+    border-top: 1px solid;
+    padding-top: 5px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.734;
+}
+
+.discography-description{
+    width: 60%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 196px;
+    height: 56px;
+    border: 1px solid;
+    border-style: none;
+    text-transform: uppercase;
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}
+
+.btn-1 {
+    background-image: url(../img/btn-disco1.png);
+    margin: 32px 0 112px;
+}
+
+.btn-2 {
+    background-image: url(../img/btn-disco2.png);
+    margin: 20px 0 95px;
+}
+
+.btn-3 {
+    background-image: url(../img/btn-disco3.png);
+    margin-top: 95px;
+    margin-bottom: 160px
+}

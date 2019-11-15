@@ -1,0 +1,91 @@
+.contact {
+    display: flex;
+    background-image: url(../img/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+  }
+  
+  .contact-container {
+      margin-left: 25%;
+  }
+  
+  .contact-heading {
+      position: relative;
+      margin-top: 200px;
+      font-size: 50.49px;
+      font-family: "dosis-light";
+      color: rgb(69, 69, 69);
+      text-transform: uppercase;
+  }
+  
+  .contact-heading::before {
+      content: " ";
+      border-bottom: 2px solid #000;
+      position: absolute;
+      width: 94%;
+      height: 50%;
+  }
+  
+  .contact-song {
+      font-size: 14px;
+      color: rgb(121, 130, 133); 
+      margin-top: 37px;
+      line-height: 2.0;
+  }
+  
+  .form-contact {
+      width: 385px;
+      padding-top: 64px;
+      font-size: 14px;
+      color: rgb(121, 130, 133);
+      border: none;
+      border-bottom: 2px solid  rgb(69, 69, 69);;
+      background: transparent;
+      padding-bottom: 10px;
+      :focus {
+          background: rgb(228, 234, 236);
+      }
+  }
+  
+  .form-btn {
+      margin-top: 28px;
+      border: none;
+      background: transparent;
+      font-size: 20px;
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 70px;
+      height: 25px;
+      margin-bottom: 50px;
+  }
+  
+  .form-container {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .contact-form-container {
+      display: flex;
+  }
+  
+  .social-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-left: 2px solid #000;
+  }
+  
+  
+  .social-container-outer {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 150px;
+      padding-top: 90px;
+  }
+  
+  .social-el {
+      padding-left: 15px;
+  }
+  

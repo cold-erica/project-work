@@ -1,0 +1,120 @@
+.news {
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+.news-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.news-content-event {
+    width: 30%;
+}
+
+.card-padding {
+    padding: 32px 32px 10px 32px;
+}
+.card-margin {
+    margin: 20px;
+}
+
+.card {
+    transition-duration: .5s;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    transition-duration: .5s;
+}
+
+.front .back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+}
+
+@for $i from 1 through 6 {
+    .news-content-#{$i} {
+        background-image: url(../img/news#{$i}.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 100%;
+    }
+}
+ 
+@for $i from 1 through 6 {
+    .card-front-#{$i} {
+        background-image: url(../img/front-card#{$i}.png);
+        background-repeat: no-repeat;
+        background-size:cover; 
+        background-position: right;
+        height: 100%;
+    }
+} 
+
+.news-date {
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgba(0, 0, 0, 0.651);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 36px;
+    padding: {
+        top: 35px;
+        bottom: 14px;
+    }
+}
+
+.news-event {
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 80%;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.734;
+    
+}
+
+.news-description {
+    font-size: 23px;
+    font-family: "Open Sans";
+    color: rgb(0, 0, 0);
+    line-height: 1.055;
+    font-weight: bold;
+    padding-bottom: 63px;
+    
+}
+
+.news-song-description {
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: rgb(121, 130, 133);
+    line-height: 1.734;
+}
+
+@media (max-width: 1024px) {
+    .news-event {
+        width: 60%;
+    }
+}
