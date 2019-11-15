@@ -1,6 +1,9 @@
+## Requirements
+NodeJs > 10
+
 ## How to run
 
 ```
 npm i
-gulp
+npm run start
 ```
