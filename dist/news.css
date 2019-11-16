@@ -19,6 +19,10 @@
 .card-margin {
   margin: 20px; }
 
+@media (max-width: 1024px) {
+  .card-margin {
+    margin: 20px 0; } }
+
 .card {
   transition-duration: .5s;
   transform-style: preserve-3d; }

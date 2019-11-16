@@ -1,3 +1,5 @@
+@import './constants.scss';
+
 .concert {
     display: flex;
     flex-direction: column;
@@ -104,14 +106,18 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $tablet) {
     .concert-heading::before {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
     .concert-preview {
         padding-bottom: 30px;
+    }
+
+    .concert-present-content {
+        max-width: unset;
     }
 }

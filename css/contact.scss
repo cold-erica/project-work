@@ -1,3 +1,5 @@
+@import './constants.scss';
+
 .contact {
     display: flex;
     background-image: url(../img/footer-bg.png);
@@ -47,6 +49,12 @@
           background: rgb(228, 234, 236);
       }
   }
+
+  @media(max-width: 768px) {
+    .form-contact {
+        width: 100%;
+    }
+  }
   
   .form-btn {
       margin-top: 28px;
@@ -84,6 +92,12 @@
       margin-left: 150px;
       padding-top: 90px;
   }
+
+  @media(max-width: 768px) {
+    .social-container-outer {
+        display: none;
+    }
+  }
   
   .social-el {
       padding-left: 15px;
@@ -92,5 +106,13 @@
   @media (max-width: 768px) {
     .contact-heading::before {
         display: none;
+    }
+
+    .contact-container {
+        margin-left: 0;
+    }
+
+    .form-container {
+        width: 100%;
     }
   }

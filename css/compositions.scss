@@ -1,3 +1,5 @@
+@import './constants.scss';
+
 .compositions {
     display: flex;
     flex-direction: column;
@@ -159,7 +161,7 @@
     }
 }
 
-@media ( max-width: 1024px) {
+@media (max-width: $tablet) {
     .compositions-content-container {
         flex-direction: column;
     }
@@ -168,9 +170,10 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
     .compositions-preview {
         padding-bottom: 30px;
+        margin: 0 15px;
     }
     .compositions-content {
         margin: 0;
@@ -180,11 +183,16 @@
     }
     .song-description {
         width: auto;
+        padding: 0 20px;
     }
     .video {
         width: auto;
     }
     .compositions-wrapper-btn {
         flex-direction: column;
+    }
+
+    .compositions-content-container-middle {
+        flex-direction: column-reverse;
     }
 }

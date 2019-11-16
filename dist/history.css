@@ -63,4 +63,8 @@
   .history-event {
     padding-bottom: 20px; }
   .history {
-    height: auto; } }
+    height: auto; }
+  .history-container {
+    display: none; }
+  .hisrtory-song-description {
+    display: none; } }

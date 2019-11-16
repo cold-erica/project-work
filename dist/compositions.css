@@ -131,14 +131,18 @@
 
 @media (max-width: 768px) {
   .compositions-preview {
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    margin: 0 15px; }
   .compositions-content {
     margin: 0; }
   .compositions-heading {
     margin-top: 60px; }
   .song-description {
-    width: auto; }
+    width: auto;
+    padding: 0 20px; }
   .video {
     width: auto; }
   .compositions-wrapper-btn {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .compositions-content-container-middle {
+    flex-direction: column-reverse; } }

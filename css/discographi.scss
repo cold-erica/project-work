@@ -1,3 +1,5 @@
+@import './constants.scss';
+
 .discography {
     background-image: url(../img/bg-disco.png);
     background-repeat: no-repeat;
@@ -63,6 +65,12 @@ h1::before {
     padding-right: 20px;
 }
 
+@media(max-width: $tablet) {
+    .chronology {
+        margin-bottom: 40px;
+    }
+}
+
 .chronology-content {
     font-size: 14px;
     color: rgb(172, 172, 172);
@@ -88,9 +96,16 @@ h1::before {
     line-height: 1.734;
 }
 
-.discography-description{
+.discography-description {
     width: 60%;
     margin-right: 15px;
+}
+
+@media(max-width: $tablet) {
+    .discography-description {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 .button {
@@ -130,9 +145,13 @@ h1::before {
             top: 30px;
             bottom: 30px;
         }
+
+        margin: 0 15px;
     }
 
     .container-disco {
         flex-direction: column;
+        margin: 0 15px;
     }
+
 }

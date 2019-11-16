@@ -95,4 +95,6 @@
 
 @media (max-width: 768px) {
   .concert-preview {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+  .concert-present-content {
+    max-width: unset; } }

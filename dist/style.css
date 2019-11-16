@@ -160,6 +160,10 @@ h1::before {
   width: 40%;
   padding-right: 20px; }
 
+@media (max-width: 1024px) {
+  .chronology {
+    margin-bottom: 40px; } }
+
 .chronology-content {
   font-size: 14px;
   color: #acacac;
@@ -185,6 +189,11 @@ h1::before {
 .discography-description {
   width: 60%;
   margin-right: 15px; }
+
+@media (max-width: 1024px) {
+  .discography-description {
+    width: 100%;
+    margin-right: 0; } }
 
 .button {
   display: flex;
@@ -215,9 +224,11 @@ h1::before {
 @media (max-width: 768px) {
   .preview {
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    margin: 0 15px; }
   .container-disco {
-    flex-direction: column; } }
+    flex-direction: column;
+    margin: 0 15px; } }
 
 .concert {
   display: flex;
@@ -316,7 +327,9 @@ h1::before {
 
 @media (max-width: 768px) {
   .concert-preview {
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+  .concert-present-content {
+    max-width: unset; } }
 
 .compositions {
   display: flex;
@@ -451,17 +464,21 @@ h1::before {
 
 @media (max-width: 768px) {
   .compositions-preview {
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    margin: 0 15px; }
   .compositions-content {
     margin: 0; }
   .compositions-heading {
     margin-top: 60px; }
   .song-description {
-    width: auto; }
+    width: auto;
+    padding: 0 20px; }
   .video {
     width: auto; }
   .compositions-wrapper-btn {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .compositions-content-container-middle {
+    flex-direction: column-reverse; } }
 
 .event {
   display: flex;
@@ -474,6 +491,13 @@ h1::before {
 
 .event-content {
   max-width: 50%; }
+
+@media (max-width: 1024px) {
+  .event-content {
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 .event-heading {
   position: relative;
@@ -491,6 +515,10 @@ h1::before {
   width: 50%;
   height: 50%; }
 
+@media (max-width: 1024px) {
+  .event-heading::before {
+    width: 100%; } }
+
 .event-description {
   font-size: 23px;
   font-family: "Open Sans";
@@ -506,6 +534,10 @@ h1::before {
   color: #798285;
   padding-bottom: 20px;
   margin-right: 20px; }
+
+@media (max-width: 1024px) {
+  .event-song-description {
+    margin-right: 0; } }
 
 .event-description-underline {
   border-top: 1px solid black;
@@ -525,6 +557,10 @@ h1::before {
   margin-left: 4%;
   margin-bottom: 12px; }
 
+@media (max-width: 1024px) {
+  .event-song-underline {
+    margin-left: 0; } }
+
 .event-date-underline {
   border-left: 1px solid black;
   height: 166px;
@@ -538,20 +574,19 @@ h1::before {
   margin-bottom: 12px;
   margin-top: 12px; }
 
-@media (max-width: 1024px) {
-  .event-heading::before {
-    display: none; } }
-
 @media (max-width: 768px) {
   .event-date-underline {
-    height: 20px; }
+    height: 20px;
+    margin-left: 0; }
   .event-song-underline {
-    height: 20px; }
+    height: 20px;
+    margin-left: 0; }
   .event-heading {
     margin-top: 50px;
     margin-bottom: 40px; }
   .event-song-description-underline {
-    height: 20px; } }
+    height: 20px;
+    margin-left: 0; } }
 
 .history {
   display: flex;
@@ -618,7 +653,11 @@ h1::before {
   .history-event {
     padding-bottom: 20px; }
   .history {
-    height: auto; } }
+    height: auto; }
+  .history-container {
+    display: none; }
+  .hisrtory-song-description {
+    display: none; } }
 
 .news {
   display: flex;
@@ -640,6 +679,10 @@ h1::before {
 
 .card-margin {
   margin: 20px; }
+
+@media (max-width: 1024px) {
+  .card-margin {
+    margin: 20px 0; } }
 
 .card {
   transition-duration: .5s;
@@ -828,6 +871,10 @@ h1::before {
   .form-contact :focus {
     background: #e4eaec; }
 
+@media (max-width: 768px) {
+  .form-contact {
+    width: 100%; } }
+
 .form-btn {
   margin-top: 28px;
   border: none;
@@ -859,17 +906,26 @@ h1::before {
   margin-left: 150px;
   padding-top: 90px; }
 
+@media (max-width: 768px) {
+  .social-container-outer {
+    display: none; } }
+
 .social-el {
   padding-left: 15px; }
 
 @media (max-width: 768px) {
   .contact-heading::before {
-    display: none; } }
+    display: none; }
+  .contact-container {
+    margin-left: 0; }
+  .form-container {
+    width: 100%; } }
 
 .header {
   background-image: url(../img/bg-header.png);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
   width: 100%;
   height: 835px; }
 

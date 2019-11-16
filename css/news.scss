@@ -1,3 +1,5 @@
+@import './constants.scss';
+
 .news {
     display: flex;
     flex-direction: column;
@@ -23,6 +25,12 @@
 }
 .card-margin {
     margin: 20px;
+}
+
+@media(max-width: $tablet) {
+    .card-margin {
+        margin: 20px 0;
+    }
 }
 
 .card {
@@ -113,13 +121,13 @@
     line-height: 1.734;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: $tablet) {
     .news-event {
         width: 55%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $mobile) {
     .news-content {
         flex-direction: column;
     }

@@ -55,6 +55,10 @@ h1::before {
   width: 40%;
   padding-right: 20px; }
 
+@media (max-width: 1024px) {
+  .chronology {
+    margin-bottom: 40px; } }
+
 .chronology-content {
   font-size: 14px;
   color: #acacac;
@@ -80,6 +84,11 @@ h1::before {
 .discography-description {
   width: 60%;
   margin-right: 15px; }
+
+@media (max-width: 1024px) {
+  .discography-description {
+    width: 100%;
+    margin-right: 0; } }
 
 .button {
   display: flex;
@@ -110,6 +119,8 @@ h1::before {
 @media (max-width: 768px) {
   .preview {
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    margin: 0 15px; }
   .container-disco {
-    flex-direction: column; } }
+    flex-direction: column;
+    margin: 0 15px; } }
