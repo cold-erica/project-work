@@ -458,7 +458,9 @@ h1::before {
   .compositions-heading {
     margin-top: 60px; }
   .song-description {
-    width: 100%; } }
+    width: auto; }
+  .video {
+    width: auto; } }
 
 .event {
   display: flex;
