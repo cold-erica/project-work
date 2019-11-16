@@ -89,3 +89,8 @@
       padding-left: 15px;
   }
   
+  @media (max-width: 768px) {
+    .contact-heading::before {
+        display: none;
+    }
+  }

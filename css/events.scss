@@ -99,3 +99,21 @@
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    .event-date-underline {
+        height: 20px;
+    }
+    .event-song-underline {
+        height: 20px;
+    }
+    .event-heading {
+        margin: {
+            top: 50px;
+            bottom: 40px;
+        }
+    }
+    .event-song-description-underline {
+        height: 20px;
+    }
+}

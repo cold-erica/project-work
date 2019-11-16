@@ -118,3 +118,12 @@
         width: 55%;
     }
 }
+
+@media (max-width: 768px) {
+    .news-content {
+        flex-direction: column;
+    }
+    .news-content-event {
+        width: 100%;
+    }
+}

@@ -11,6 +11,7 @@
 
 .concert-content {
     max-width: 1250px;
+    margin-left: 15px;
 }
 
 .concert-heading {
@@ -41,6 +42,7 @@
     text-align: center;
     max-width: 855px;
     padding-bottom: 350px;
+    padding-right: 15px;
     margin: {
         left: auto;
         right: auto ;
@@ -105,5 +107,11 @@
 @media (max-width: 1024px) {
     .concert-heading::before {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .concert-preview {
+        padding-bottom: 30px;
     }
 }

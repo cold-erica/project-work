@@ -55,6 +55,7 @@ h1::before {
 
 .container-disco {
     display: flex;
+    margin-left: 15px;
 }
 
 .chronology {
@@ -89,6 +90,7 @@ h1::before {
 
 .discography-description{
     width: 60%;
+    margin-right: 15px;
 }
 
 .button {
@@ -120,4 +122,18 @@ h1::before {
     background-image: url(../img/btn-disco3.png);
     margin-top: 95px;
     margin-bottom: 160px
+}
+
+@media (max-width: 768px) {
+    .preview {
+        padding: {
+            top: 30px;
+            bottom: 30px;
+        }
+    }
+
+    .container-disco {
+        flex-direction: column;
+        align-items: center;
+    }
 }

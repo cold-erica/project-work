@@ -55,7 +55,7 @@
     border-style: none;
     width: 543px;
     background-color: rgb(245, 246, 246);
-    background-size: cover;
+    background-size: contain;
     padding: 0 20px 0 37px;
 }
 
@@ -165,5 +165,20 @@
     }
     .compositions-heading::before {
         display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .compositions-preview {
+        padding-bottom: 30px;
+    }
+    .compositions-content {
+        margin: 0;
+    }
+    .compositions-heading {
+        margin-top: 60px;
+    }
+    .song-description {
+        width: 100%;
     }
 }
