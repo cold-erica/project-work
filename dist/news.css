@@ -43,7 +43,14 @@
 
 .front {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  z-index: 5; }
+
+.front:hover {
+  z-index: 0; }
+
+.back:hover {
+  z-index: 10; }
 
 .news-content-1 {
   background-image: url(../img/news1.png);
@@ -159,7 +166,17 @@
 
 @media (max-width: 1024px) {
   .news-event {
-    width: 55%; } }
+    width: 55%; }
+  .back {
+    transform: rotateY(0deg); }
+  .front {
+    position: absolute;
+    width: 100%;
+    z-index: -1; }
+  .front:hover {
+    z-index: -1; }
+  .back:hover {
+    z-index: 1; } }
 
 @media (max-width: 768px) {
   .news-content {

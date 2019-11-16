@@ -68,3 +68,7 @@
     display: none; }
   .hisrtory-song-description {
     display: none; } }
+
+@media (max-width: 1024px) {
+  .history {
+    background-size: cover; } }
