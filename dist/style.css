@@ -1,0 +1,966 @@
+@import url(./reset.css);
+@import url(swiper.min.css);
+@import url(./swiper.min.css);
+.swiper-container {
+  width: 100%;
+  height: 640px;
+  margin-bottom: 20px;
+  background-image: url(../img/slider-bg.png);
+  background-size: cover; }
+
+.slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  text-align: center; }
+  .slide div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+
+.slide-1 {
+  background-image: url(../img/slider-bg.png); }
+
+.slide-2 {
+  background-image: url(../img/slide-2.jpg); }
+
+.slide-3 {
+  background-image: url(../img/slide-3.jpg); }
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  line-height: 10px;
+  font-size: 12px;
+  color: #fff;
+  opacity: 1;
+  background: white;
+  border: 1px solid #fff; }
+
+.swiper-pagination-bullet-active {
+  border: 1px solid #fff;
+  background: transparent; }
+
+.slider-button {
+  background: url(../img/btn-slider.png);
+  background-size: contain;
+  width: 45px;
+  height: 90px; }
+
+.slider-button-next {
+  transform: rotate(180deg);
+  right: 0; }
+
+.slider-button-prev {
+  left: 0; }
+
+.swiper-button-next::after {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 5px;
+  transform: rotate(180deg); }
+
+.swiper-button-prev::after {
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  padding-right: 5px; }
+
+.slide-title {
+  font-size: 18.49px;
+  font-family: "dosis-light";
+  color: white;
+  text-transform: uppercase;
+  line-height: 1.421;
+  text-align: center; }
+
+.slide-text {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #798285;
+  line-height: 1.734; }
+
+.slide-date {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #565e61; }
+
+.slide-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.img-title-note {
+  margin: 0 25px 0 25px; }
+
+.img-title {
+  margin-top: 100px;
+  margin-bottom: 25px; }
+
+.discography {
+  background-image: url(../img/bg-disco.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  width: 100%; }
+
+.discography-content {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+
+h1 {
+  position: relative;
+  font-size: 50.49px;
+  font-family: "dosis-light";
+  color: #5c0d0d;
+  text-transform: uppercase;
+  line-height: 1.1;
+  text-align: center; }
+
+h1::before {
+  content: " ";
+  border-bottom: 2px solid #000;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+  width: 120%;
+  height: 50%;
+  z-index: -1; }
+
+.discography-song-description {
+  font-size: 23px;
+  color: #000;
+  text-align: center; }
+
+.preview {
+  padding-top: 50px;
+  padding-bottom: 160px;
+  max-width: 716px;
+  font-size: 14px;
+  color: #798285;
+  line-height: 1.734;
+  text-align: center; }
+
+.container-disco {
+  display: flex;
+  margin-left: 15px; }
+
+.chronology {
+  width: 40%;
+  padding-right: 20px; }
+
+.chronology-content {
+  font-size: 14px;
+  color: #acacac;
+  line-height: 1.734;
+  margin-top: 20px; }
+
+.chronology-date {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.651);
+  font-weight: bold;
+  line-height: 1.734;
+  margin-top: 15px; }
+
+.chronology-event {
+  border-top: 1px solid;
+  padding-top: 5px;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.734; }
+
+.discography-description {
+  width: 60%;
+  margin-right: 15px; }
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  height: 56px;
+  border: 1px solid;
+  border-style: none;
+  text-transform: uppercase; }
+  .button a {
+    text-decoration: none;
+    color: #000; }
+
+.btn-1 {
+  background-image: url(../img/btn-disco1.png);
+  margin: 32px 0 112px; }
+
+.btn-2 {
+  background-image: url(../img/btn-disco2.png);
+  margin: 20px 0 95px; }
+
+.btn-3 {
+  background-image: url(../img/btn-disco3.png);
+  margin-top: 95px;
+  margin-bottom: 160px; }
+
+@media (max-width: 768px) {
+  .preview {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .container-disco {
+    flex-direction: column;
+    align-items: center; } }
+
+.concert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/bg-concert.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  width: 100%; }
+
+.concert-content {
+  max-width: 1250px;
+  margin-left: 15px; }
+
+.concert-heading {
+  position: relative;
+  font-size: 50.49px;
+  font-family: "dosis-light";
+  color: #90d2f8;
+  text-transform: uppercase;
+  line-height: 1.174;
+  text-align: center;
+  margin: 160px 0 55px; }
+
+.concert-heading::before {
+  content: " ";
+  border-bottom: 2px solid #000;
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  z-index: -1;
+  left: 35%; }
+
+.concert-preview {
+  font-size: 14px;
+  color: #798285;
+  line-height: 1.734;
+  text-align: center;
+  max-width: 855px;
+  padding-bottom: 350px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.concert-tour-date {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.651);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.734;
+  text-align: left; }
+
+.concert-tour-event {
+  border-top: 1px solid;
+  padding: 5px 0 30px;
+  max-width: 30%;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.734;
+  text-align: left; }
+
+.concert-present-data {
+  padding-bottom: 23px;
+  font-size: 23px;
+  color: black;
+  line-height: 1.055; }
+
+.concert-present-content {
+  font-size: 14px;
+  color: #798285;
+  line-height: 1.734;
+  text-align: left;
+  max-width: 55%; }
+
+.concert-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  height: 56px;
+  border: 1px solid #c0ced3;
+  margin-top: 40px;
+  margin-bottom: 50px; }
+  .concert-btn a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold; }
+
+@media (max-width: 1024px) {
+  .concert-heading::before {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .concert-preview {
+    padding-bottom: 30px; } }
+
+.compositions {
+  display: flex;
+  flex-direction: column; }
+
+.compositions-content {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.compositions-heading {
+  position: relative;
+  font-size: 50.49px;
+  font-family: "dosis-light";
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 162px;
+  margin-bottom: 55px; }
+
+.compositions-heading::before {
+  content: " ";
+  border-bottom: 2px solid #000;
+  position: absolute;
+  width: 44%;
+  height: 50%;
+  z-index: -1;
+  left: 28%; }
+
+.video {
+  object-fit: cover; }
+
+.compositions-preview {
+  max-width: 692px;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #798285;
+  line-height: 1.734;
+  text-align: center;
+  padding-bottom: 163px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.song-description {
+  border: 1px solid;
+  border-style: none;
+  width: 543px;
+  background-color: #f5f6f6;
+  background-size: contain;
+  padding: 0 20px 0 37px; }
+
+.compositions-content-container {
+  display: flex;
+  padding-bottom: 54px; }
+
+.compositions-date {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgba(0, 0, 0, 0.651);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 35px;
+  padding-bottom: 13px; }
+
+.compositions-event {
+  border-top: 1px solid;
+  width: 70%;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 50px; }
+
+.compositions-description {
+  font-size: 23px;
+  font-family: "Open Sans";
+  color: black;
+  font-weight: bold;
+  line-height: 1.055;
+  padding-bottom: 40px; }
+
+.compositions-song-description {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #798285;
+  padding-bottom: 15px; }
+
+@keyframes button-shaking {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(5deg); }
+  75% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+.compositions-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 196px;
+  height: 56px;
+  border: 1px solid #c0ced3; }
+  .compositions-btn a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold; }
+
+.compositions-btn:hover {
+  animation: button-shaking 2s infinite ease; }
+
+.compositions-wrapper-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px; }
+  .compositions-wrapper-btn i {
+    color: rgba(153, 153, 153, 0.8);
+    margin-top: 35px;
+    margin-right: 20px;
+    margin-left: 5px; }
+
+@media (max-width: 1024px) {
+  .compositions-content-container {
+    flex-direction: column; }
+  .compositions-heading::before {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .compositions-preview {
+    padding-bottom: 30px; }
+  .compositions-content {
+    margin: 0; }
+  .compositions-heading {
+    margin-top: 60px; }
+  .song-description {
+    width: 100%; } }
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-image: url(../img/event-bg.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.event-content {
+  max-width: 50%; }
+
+.event-heading {
+  position: relative;
+  font-size: 50.49px;
+  font-family: "dosis-light";
+  color: #42717e;
+  text-transform: uppercase;
+  margin-top: 180px;
+  margin-bottom: 120px; }
+
+.event-heading::before {
+  content: " ";
+  border-bottom: 2px solid #000;
+  position: absolute;
+  width: 50%;
+  height: 50%; }
+
+.event-description {
+  font-size: 23px;
+  font-family: "Open Sans";
+  color: black;
+  line-height: 1.055;
+  font-weight: bold;
+  padding-bottom: 16px; }
+
+.event-song-description {
+  max-width: 70%;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #798285;
+  padding-bottom: 20px;
+  margin-right: 20px; }
+
+.event-description-underline {
+  border-top: 1px solid black;
+  width: 15%;
+  padding-bottom: 20px; }
+
+.event-date {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.651);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 25px; }
+
+.event-song-underline {
+  border-left: 1px solid black;
+  height: 51px;
+  margin-left: 4%;
+  margin-bottom: 12px; }
+
+.event-date-underline {
+  border-left: 1px solid black;
+  height: 166px;
+  margin-left: 4%;
+  margin-bottom: 25px; }
+
+.event-song-description-underline {
+  border-left: 1px solid black;
+  height: 51px;
+  margin-left: 4%;
+  margin-bottom: 12px;
+  margin-top: 12px; }
+
+@media (max-width: 1024px) {
+  .event-heading::before {
+    display: none; } }
+
+@media (max-width: 768px) {
+  .event-date-underline {
+    height: 20px; }
+  .event-song-underline {
+    height: 20px; }
+  .event-heading {
+    margin-top: 50px;
+    margin-bottom: 40px; }
+  .event-song-description-underline {
+    height: 20px; } }
+
+.history {
+  display: flex;
+  flex-direction: column;
+  height: 1250px;
+  background-image: url(../img/history-bg.png);
+  background-position: bottom;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.history-heading {
+  position: relative;
+  font-size: 50.49px;
+  font-family: "dosis-light";
+  color: #5b5c5a;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 160px auto 56px auto; }
+
+.history-heading::before {
+  content: " ";
+  border-bottom: 2px solid #000;
+  position: absolute;
+  width: 110%;
+  height: 50%;
+  z-index: -1;
+  left: -6%; }
+
+.history-event {
+  font-size: 14px;
+  color: #798285;
+  line-height: 1.734;
+  text-align: center;
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 200px; }
+
+.history-container {
+  display: flex; }
+  .history-container p {
+    font-size: 35.49px;
+    font-family: "Dosis";
+    color: rgba(0, 0, 0, 0.278);
+    text-transform: uppercase;
+    line-height: 1.67; }
+  .history-container div {
+    width: 147px;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto; }
+
+.hisrtory-song-description {
+  max-width: 10%;
+  text-align: center;
+  padding-top: 45px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media (max-width: 768px) {
+  .history-heading {
+    margin-top: 50px; }
+  .history-event {
+    padding-bottom: 20px; }
+  .history {
+    height: auto; } }
+
+.news {
+  display: flex;
+  flex-direction: column;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.news-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.news-content-event {
+  width: 30%; }
+
+.card-padding {
+  padding: 32px 32px 10px 32px; }
+
+.card-margin {
+  margin: 20px; }
+
+.card {
+  transition-duration: .5s;
+  transform-style: preserve-3d; }
+
+.card:hover {
+  transform: rotateY(180deg);
+  transition-duration: .5s; }
+
+.front .back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  backface-visibility: hidden; }
+
+.back {
+  transform: rotateY(180deg); }
+
+.front {
+  position: absolute;
+  width: 100%; }
+
+.news-content-1 {
+  background-image: url(../img/news1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
+
+.news-content-2 {
+  background-image: url(../img/news2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
+
+.news-content-3 {
+  background-image: url(../img/news3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
+
+.news-content-4 {
+  background-image: url(../img/news4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
+
+.news-content-5 {
+  background-image: url(../img/news5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
+
+.news-content-6 {
+  background-image: url(../img/news6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%; }
+
+.card-front-1 {
+  background-image: url(../img/front-card1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100%; }
+
+.card-front-2 {
+  background-image: url(../img/front-card2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100%; }
+
+.card-front-3 {
+  background-image: url(../img/front-card3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100%; }
+
+.card-front-4 {
+  background-image: url(../img/front-card4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100%; }
+
+.card-front-5 {
+  background-image: url(../img/front-card5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100%; }
+
+.card-front-6 {
+  background-image: url(../img/front-card6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100%; }
+
+.news-date {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: rgba(0, 0, 0, 0.651);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 36px;
+  padding-top: 35px;
+  padding-bottom: 14px; }
+
+.news-event {
+  border-top: 1px solid black;
+  width: 65%;
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.734; }
+
+.news-description {
+  font-size: 23px;
+  font-family: "Open Sans";
+  color: black;
+  line-height: 1.055;
+  font-weight: bold;
+  padding-bottom: 63px; }
+
+.news-song-description {
+  font-size: 14px;
+  font-family: "Open Sans";
+  color: #798285;
+  line-height: 1.734; }
+
+@media (max-width: 1024px) {
+  .news-event {
+    width: 55%; } }
+
+@media (max-width: 768px) {
+  .news-content {
+    flex-direction: column; }
+  .news-content-event {
+    width: 100%; } }
+
+.contact {
+  display: flex;
+  background-image: url(../img/footer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center; }
+
+.contact-container {
+  margin-left: 25%; }
+
+.contact-heading {
+  position: relative;
+  margin-top: 200px;
+  font-size: 50.49px;
+  font-family: "dosis-light";
+  color: #454545;
+  text-transform: uppercase; }
+
+.contact-heading::before {
+  content: " ";
+  border-bottom: 2px solid #000;
+  position: absolute;
+  width: 94%;
+  height: 50%; }
+
+.contact-song {
+  font-size: 14px;
+  color: #798285;
+  margin-top: 37px;
+  line-height: 2.0; }
+
+.form-contact {
+  width: 385px;
+  padding-top: 64px;
+  font-size: 14px;
+  color: #798285;
+  border: none;
+  border-bottom: 2px solid #454545;
+  background: transparent;
+  padding-bottom: 10px; }
+  .form-contact :focus {
+    background: #e4eaec; }
+
+.form-btn {
+  margin-top: 28px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 70px;
+  height: 25px;
+  margin-bottom: 50px; }
+
+.form-container {
+  display: flex;
+  flex-direction: column; }
+
+.contact-form-container {
+  display: flex; }
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-left: 2px solid #000; }
+
+.social-container-outer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 150px;
+  padding-top: 90px; }
+
+.social-el {
+  padding-left: 15px; }
+
+@media (max-width: 768px) {
+  .contact-heading::before {
+    display: none; } }
+
+.header {
+  background-image: url(../img/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 835px; }
+
+@keyframes blink-header {
+  0% {
+    transform: translateX(-60px) skew(35deg); }
+  50%, to {
+    transform: translateX(100%) skew(35deg); } }
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e6e6;
+  opacity: 0.5;
+  height: 63px;
+  position: fixed;
+  width: 100%;
+  z-index: 5; }
+  .header-content ::before {
+    width: 100%;
+    height: 100%;
+    content: "";
+    border-left: 58px solid rgba(255, 251, 237, 0.16);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    will-change: transform;
+    animation: blink-header 5s infinite ease; }
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  width: 100%; }
+  .menu li {
+    font-size: 17px;
+    text-transform: uppercase; }
+  .menu li:hover {
+    border-bottom: #000 solid; }
+  .menu a {
+    text-decoration: none;
+    color: #000;
+    padding: 6px 6px 10px 0; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 159px;
+  margin-right: 14px; }
+
+@media (max-width: 1024px) {
+  .logo {
+    display: none; }
+  .header {
+    height: 600px; }
+  .menu {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start; }
+    .menu li {
+      margin: 15px; }
+  .header-content {
+    height: auto;
+    position: relative; }
+    .header-content ::before {
+      display: none;
+      animation: none; } }
+
+@media (max-width: 768px) {
+  .header {
+    height: 450px; } }
+
+@font-face {
+  font-family: "dosis-light";
+  src: url(../font/Dosis-Light.ttf); }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../font/open-sans.ttf); }
+
+.dosis {
+  font-family: "dosis-light"; }
+
+.sans {
+  font-family: "Open Sans"; }
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans"; }
+
+main {
+  display: flex;
+  flex-direction: column; }
