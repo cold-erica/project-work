@@ -75,6 +75,31 @@
       display: none;
       animation: none; } }
 
+.humburger-container {
+  display: none;
+  justify-content: flex-end;
+  height: 30px;
+  position: fixed;
+  z-index: 1000; }
+
+.humburger > i {
+  font-size: 30px;
+  padding-left: 2px; }
+
+.visible {
+  display: flex !important; }
+
+.hidden {
+  display: none !important; }
+
 @media (max-width: 768px) {
   .header {
-    height: 450px; } }
+    height: 450px; }
+  .header-content {
+    display: none;
+    position: fixed;
+    opacity: 0.9; } }
+
+@media (max-width: 1024px) {
+  .humburger-container {
+    display: flex; } }

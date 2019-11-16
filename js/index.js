@@ -1,11 +1,13 @@
 import { LikeHandler } from './like';
 import { Slider } from './slider';
+import { HumburgerMenu } from './humburger';
 import Swal from 'sweetalert2';
 
 
 class Application {
     constructor() {
         this.slider = null;
+        this.menu = null;
     }
 
     start() {
@@ -13,6 +15,24 @@ class Application {
         this.slider.start();
         this.setupFeedbackForm();
         new LikeHandler();
+        this.menu = new HumburgerMenu();
+        this.setupEvents();
+    }
+
+    setupEvents() {
+        console.log('setup events');
+        document.addEventListener('click', (e) => {
+            console.log(e.target);
+            const isButton = (
+                e.target.classList.contains('js-humburger-menu') > 0
+                || e.target.classList.contains('js-humburger-button') > 0
+            );
+            console.log(isButton);
+            if (!isButton) {
+                console.log('closing');
+                this.menu.close();
+            }
+        });
     }
 
     setupFeedbackForm() {

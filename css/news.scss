@@ -135,14 +135,25 @@
         width: 55%;
     }
 
+    .card {
+        transform-style: unset;
+    }
+    
+    .card:hover {
+        transform: unset;
+    }
+
     .back {
         transform: rotateY(0deg);
+        animation: unset;
     }
     
     .front {
         position: absolute;
         width: 100%;
         z-index: -1;
+        display: none;
+        animation: unset;
     }
     
     .front:hover {

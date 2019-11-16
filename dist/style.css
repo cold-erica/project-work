@@ -832,12 +832,19 @@ h1::before {
 @media (max-width: 1024px) {
   .news-event {
     width: 55%; }
+  .card {
+    transform-style: unset; }
+  .card:hover {
+    transform: unset; }
   .back {
-    transform: rotateY(0deg); }
+    transform: rotateY(0deg);
+    animation: unset; }
   .front {
     position: absolute;
     width: 100%;
-    z-index: -1; }
+    z-index: -1;
+    display: none;
+    animation: unset; }
   .front:hover {
     z-index: -1; }
   .back:hover {
@@ -1019,9 +1026,34 @@ h1::before {
       display: none;
       animation: none; } }
 
+.humburger-container {
+  display: none;
+  justify-content: flex-end;
+  height: 30px;
+  position: fixed;
+  z-index: 1000; }
+
+.humburger > i {
+  font-size: 30px;
+  padding-left: 2px; }
+
+.visible {
+  display: flex !important; }
+
+.hidden {
+  display: none !important; }
+
 @media (max-width: 768px) {
   .header {
-    height: 450px; } }
+    height: 450px; }
+  .header-content {
+    display: none;
+    position: fixed;
+    opacity: 0.9; } }
+
+@media (max-width: 1024px) {
+  .humburger-container {
+    display: flex; } }
 
 @font-face {
   font-family: "dosis-light";

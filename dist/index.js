@@ -9369,6 +9369,47 @@
     return Slider;
   }();
 
+  var HumburgerMenu =
+  /*#__PURE__*/
+  function () {
+    function HumburgerMenu() {
+      var _this = this;
+
+      _classCallCheck(this, HumburgerMenu);
+
+      this.opened = false;
+      this.el = document.querySelector('.js-humburger');
+      this.menuEl = document.querySelector('.js-header-menu');
+      this.visibleClass = 'visible';
+      this.hiddenClass = 'hidden';
+      this.el.addEventListener('click', function () {
+        if (!_this.opened) {
+          _this.open();
+        } else {
+          _this.close();
+        }
+      });
+    }
+
+    _createClass(HumburgerMenu, [{
+      key: "open",
+      value: function open() {
+        this.menuEl.classList.add(this.visibleClass);
+        this.el.classList.add(this.hiddenClass);
+        this.opened = !this.opened;
+      }
+    }, {
+      key: "close",
+      value: function close() {
+        this.menuEl.classList.remove(this.visibleClass);
+        this.el.classList.remove(this.hiddenClass);
+        this.opened = !this.opened;
+      }
+    }]);
+
+    return HumburgerMenu;
+  }();
+
   var consolePrefix = 'SweetAlert2:';
   /**
    * Filter the unique values into a new array
@@ -12165,6 +12206,7 @@
       _classCallCheck(this, Application);
 
       this.slider = null;
+      this.menu = null;
     }
 
     _createClass(Application, [{
@@ -12174,6 +12216,26 @@
         this.slider.start();
         this.setupFeedbackForm();
         new LikeHandler();
+        this.menu = new HumburgerMenu();
+        this.setupEvents();
+      }
+    }, {
+      key: "setupEvents",
+      value: function setupEvents() {
+        var _this = this;
+
+        console.log('setup events');
+        document.addEventListener('click', function (e) {
+          console.log(e.target);
+          var isButton = e.target.classList.contains('js-humburger-menu') > 0 || e.target.classList.contains('js-humburger-button') > 0;
+          console.log(isButton);
+
+          if (!isButton) {
+            console.log('closing');
+
+            _this.menu.close();
+          }
+        });
       }
     }, {
       key: "setupFeedbackForm",
