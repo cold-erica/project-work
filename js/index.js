@@ -20,16 +20,12 @@ class Application {
     }
 
     setupEvents() {
-        console.log('setup events');
         document.addEventListener('click', (e) => {
-            console.log(e.target);
             const isButton = (
                 e.target.classList.contains('js-humburger-menu') > 0
                 || e.target.classList.contains('js-humburger-button') > 0
             );
-            console.log(isButton);
             if (!isButton) {
-                console.log('closing');
                 this.menu.close();
             }
         });

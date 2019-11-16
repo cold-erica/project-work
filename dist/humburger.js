@@ -39,12 +39,17 @@
       this.menuEl = document.querySelector('.js-header-menu');
       this.visibleClass = 'visible';
       this.hiddenClass = 'hidden';
-      this.el.addEventListener('click', function () {
+      this.el.addEventListener('animationend', function () {
+        _this.el.classList.remove('rotate-humberger');
+
         if (!_this.opened) {
           _this.open();
         } else {
           _this.close();
         }
+      });
+      this.el.addEventListener('click', function () {
+        _this.el.classList.add('rotate-humberger');
       });
     }
 

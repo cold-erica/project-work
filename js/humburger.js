@@ -5,12 +5,18 @@ export class HumburgerMenu {
         this.menuEl = document.querySelector('.js-header-menu');
         this.visibleClass = 'visible';
         this.hiddenClass = 'hidden';
-        this.el.addEventListener('click', () => {
+
+        this.el.addEventListener('animationend', () => {
+            this.el.classList.remove('rotate-humberger');
             if (!this.opened) {
                 this.open();
             } else {
                 this.close();
             }
+        });
+
+        this.el.addEventListener('click', () => {
+            this.el.classList.add('rotate-humberger');
         });
     }
 

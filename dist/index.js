@@ -9382,12 +9382,17 @@
       this.menuEl = document.querySelector('.js-header-menu');
       this.visibleClass = 'visible';
       this.hiddenClass = 'hidden';
-      this.el.addEventListener('click', function () {
+      this.el.addEventListener('animationend', function () {
+        _this.el.classList.remove('rotate-humberger');
+
         if (!_this.opened) {
           _this.open();
         } else {
           _this.close();
         }
+      });
+      this.el.addEventListener('click', function () {
+        _this.el.classList.add('rotate-humberger');
       });
     }
 
@@ -12224,15 +12229,10 @@
       value: function setupEvents() {
         var _this = this;
 
-        console.log('setup events');
         document.addEventListener('click', function (e) {
-          console.log(e.target);
           var isButton = e.target.classList.contains('js-humburger-menu') > 0 || e.target.classList.contains('js-humburger-button') > 0;
-          console.log(isButton);
 
           if (!isButton) {
-            console.log('closing');
-
             _this.menu.close();
           }
         });
