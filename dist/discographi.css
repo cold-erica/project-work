@@ -112,5 +112,4 @@ h1::before {
     padding-top: 30px;
     padding-bottom: 30px; }
   .container-disco {
-    flex-direction: column;
-    align-items: center; } }
+    flex-direction: column; } }

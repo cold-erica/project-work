@@ -139,4 +139,6 @@
   .song-description {
     width: auto; }
   .video {
-    width: auto; } }
+    width: auto; }
+  .compositions-wrapper-btn {
+    flex-direction: column; } }
