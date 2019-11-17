@@ -100,7 +100,7 @@
 .hidden {
   display: none !important; }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header {
     height: 450px; }
   .header-content {

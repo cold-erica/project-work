@@ -9349,7 +9349,9 @@
       key: "start",
       value: function start() {
         this.slider = new Swiper(this.sliderSelector, {
+          // бесконечно прокручивать
           loop: true,
+          // классы кнопок
           navigation: {
             nextEl: "".concat(this.sliderButtonSelectorTemplate, "next"),
             prevEl: "".concat(this.sliderButtonSelectorTemplate, "prev")
@@ -12212,16 +12214,23 @@
 
       this.slider = null;
       this.menu = null;
-    }
+    } // метод для запуска приложения
+
 
     _createClass(Application, [{
       key: "start",
       value: function start() {
-        this.slider = new Slider();
-        this.slider.start();
-        this.setupFeedbackForm();
-        new LikeHandler();
-        this.menu = new HumburgerMenu();
+        // создаем слайдер
+        this.slider = new Slider(); // запускаем слайдер
+
+        this.slider.start(); // ставим обработчики на форму
+
+        this.setupFeedbackForm(); // класс для обработки нажатий на кнопки лайков
+
+        new LikeHandler(); // меню гамбургера
+
+        this.menu = new HumburgerMenu(); // вешаем события закрытия меню гамбургера по клику не на него
+
         this.setupEvents();
       }
     }, {

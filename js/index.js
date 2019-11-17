@@ -10,12 +10,19 @@ class Application {
         this.menu = null;
     }
 
+    // метод для запуска приложения
     start() {
+        // создаем слайдер
         this.slider = new Slider();
+        // запускаем слайдер
         this.slider.start();
+        // ставим обработчики на форму
         this.setupFeedbackForm();
+        // класс для обработки нажатий на кнопки лайков
         new LikeHandler();
+        // меню гамбургера
         this.menu = new HumburgerMenu();
+        // вешаем события закрытия меню гамбургера по клику не на него
         this.setupEvents();
     }
 

@@ -9071,7 +9071,9 @@
       key: "start",
       value: function start() {
         this.slider = new Swiper(this.sliderSelector, {
+          // бесконечно прокручивать
           loop: true,
+          // классы кнопок
           navigation: {
             nextEl: "".concat(this.sliderButtonSelectorTemplate, "next"),
             prevEl: "".concat(this.sliderButtonSelectorTemplate, "prev")

@@ -9,7 +9,9 @@ export class Slider {
 
     start() {
         this.slider = new Swiper(this.sliderSelector, {
+            // бесконечно прокручивать
             loop: true,
+            // классы кнопок
             navigation: {
                 nextEl: `${this.sliderButtonSelectorTemplate}next`,
                 prevEl: `${this.sliderButtonSelectorTemplate}prev`,
